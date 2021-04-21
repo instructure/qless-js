@@ -1,6 +1,6 @@
 {
   "name": "qless-js",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "private": false,
   "description": "Qless JavaScript Bindings",
   "main": "index.js",
@@ -18,23 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/seomoz/qless-js"
+    "url": "http://github.com/instructure/qless-js"
   },
   "author": "Moz",
-  "contributors": [
-    {
-      "name": "Evan Battaglia",
-      "email": "evan@moz.com"
-    },
-    {
-      "name": "Dan Lecocq and other contributors of qless-core, qless-py, and qless Ruby",
-      "email": "dlecocq@instructure.com"
-    },
-    {
-      "name": "Myron Marston and other contritubutors of qless Ruby",
-      "email": "myron@moz.com"
-    }
-  ],
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",

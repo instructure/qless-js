@@ -1,5 +1,5 @@
 {
-  "name": "qless-js",
+  "name": "@inst/qless-js",
   "version": "0.4.10",
   "private": false,
   "description": "Qless JavaScript Bindings",
@@ -19,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/instructure/qless-js"
+  },
+  "publishConfig": {
+    "registry": "https://instructure.jfrog.io/instructure/api/npm/internal-npm/"
   },
   "author": "Moz",
   "license": "MIT",

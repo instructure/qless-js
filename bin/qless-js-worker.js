@@ -43,6 +43,7 @@ commander
   .option('-i, --interval <n>', 'Polling interval in seconds [default 60]', parseFloat)
   .option('-q, --queue <name>', 'Add a queue to work on', collect, [])
   .option('-v, --verbose', 'Increase logging level', increaseVerbosity, 0)
+  .option('-y, --allow-connection-retry', 'Allow reconnection after redis connection errors')
   .option('-a, --allow-paths', 'Allow paths for job class names')
   .option('-m, --max-memory <max>', 'Maximum memory each process can consume', 'Infinity')
   .option('-t, --set-tmpdir', 'Set tmpdir to be qless worker process workdir')
@@ -74,6 +75,7 @@ const config = {
   clientConfig: {
     url: options.redis,
     hostname: options.name,
+    allowConnectionRetry: options.allowConnectionRetry,
   },
   queueNames: options.queue,
   interval: (options.interval || 60) * 1000,

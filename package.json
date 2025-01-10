@@ -1,6 +1,6 @@
 {
   "name": "@inst/qless-js",
-  "version": "0.4.16",
+  "version": "0.5.0",
   "private": false,
   "description": "Qless JavaScript Bindings",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "eslint --ext .js bin lib test",
     "test": "jest --runInBand",
-    "prepublish": "git submodule update --init --recursive && make -C lib/qless-core clean all"
+    "prepublish": "make -C lib/qless-core clean all"
   },
   "repository": {
     "type": "git",
